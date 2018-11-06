@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    var allButtons = document.querySelectorAll("button");
+
+        allButtons.forEach(function(button){
+            button.addEventListener("click", function(){
+                document.documentElement.style.backgroundColor = button.id;
+            })
+        })
 
 })();

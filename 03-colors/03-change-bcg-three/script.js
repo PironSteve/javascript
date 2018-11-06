@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        var randomColor = "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
+        document.documentElement.style.backgroundColor = randomColor
+    })
 
 })();
