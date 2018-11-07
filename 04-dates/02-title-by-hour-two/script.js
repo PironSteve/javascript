@@ -9,10 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    var date = new Date();
+    var hour = date.getHours();
+    var minutes = date.getMinutes();
+    console.log(hour);
+    console.log(minutes);
+    if (hour >= 17 && minutes >= 30) {
+        document.getElementById("target").innerHTML = "Bonsoir";
+    } else {
+        document.getElementById("target").innerHTML = "Bonjour";
+    }
 
 })();
