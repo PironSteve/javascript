@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    var target = document.querySelectorAll(".target");
+    for(var i=0;i<target.length;i++){
+        target[i].innerHTML = "Owned!";
+    }
 
 })();
