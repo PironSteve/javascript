@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    var value = document.getElementById("source").getAttribute("data-image");
+    var image = document.createElement("img");
+    image.src = value;
+    document.getElementById("target").appendChild(image);
+    document.getElementById("source").parentNode.removeChild(source);
+
+    
 
 })();
