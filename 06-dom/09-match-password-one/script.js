@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    document.getElementById("run").addEventListener('click', function () {
+        var password = document.getElementById("pass-one");
+        var confirm = document.getElementById("pass-two");
+
+        if (password.value !== confirm.value) {
+            password.style.borderColor = "red";
+            confirm.style.borderColor = "red";
+        } else {
+            password.style.borderColor = "green";
+            confirm.style.borderColor = "green";
+        }
+    })
+
+
 
 })();
