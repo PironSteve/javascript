@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    var imgSource = document.querySelector("img").getAttribute("src");
+    var newImage = document.querySelector("img").getAttribute("data-hover")
+    document.querySelector("figure").addEventListener('mouseenter', function(){
+        document.querySelector("img").src = newImage;
+    })
+
+    document.querySelector("figure").addEventListener('mouseleave', function(){
+        document.querySelector("img").src = imgSource;
+    })
 
 })();
