@@ -21,7 +21,7 @@
 
     var index = 0;
     document.getElementById("next").addEventListener('click', function(){
-        if(index === gallery.length){
+        if(index === gallery.length-1){
             index = 0;
         }else{
             index++;
