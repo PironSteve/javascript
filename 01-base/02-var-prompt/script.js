@@ -11,7 +11,7 @@
 
 (function() {
 
-    var prenom = prompt("Quel est ton prénom ?");
+    const prenom = prompt("Quel est ton prénom ?");
 
     alert("Bonjour " + prenom);
 
