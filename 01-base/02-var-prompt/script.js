@@ -10,9 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    const prenom = prompt("Quel est ton prénom ?");
-
-    alert("Bonjour " + prenom);
-
+    const prenom = prompt(`Quel est ton prénom ?`);
+    alert(`Bonjour ${prenom}`);
 })();
