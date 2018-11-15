@@ -11,7 +11,7 @@
 
 (function () {
 
-    var counter = localStorage.getItem("target");
+    var counter = localStorage.getItem("counter");
     document.getElementById("target").innerHTML = counter;
 
     document.getElementById("increment").addEventListener('click', function () {
@@ -22,7 +22,7 @@
             counter++;
         }
         document.getElementById("target").innerHTML = counter;
-        localStorage.setItem("target", counter);
+        localStorage.setItem("counter", counter);
     })
 
 })();
