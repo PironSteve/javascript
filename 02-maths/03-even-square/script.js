@@ -11,11 +11,11 @@
 
 (function () {
 
-    document.getElementById("run").addEventListener("click", function () {
-        var nombre = "";
-        for (var i = 1; i < 21; i++) {
+    document.getElementById("run").addEventListener("click", ()=> {
+        let nombre = "";
+        for (let i = 1; i < 21; i++) {
             if (i % 2 == 0) {
-                nombre += "Le carré de " + i + " est : " + Math.pow(i, 2) + "\n";
+                nombre += `Le carré de ${i} est : ${Math.pow(i, 2)}\n`;
             }
         }
         alert(nombre);
