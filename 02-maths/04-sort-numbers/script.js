@@ -13,7 +13,7 @@
 
     // to get the value of an input: document.getElememntById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", ()=> {
         alert(document.getElementById("numbers").value.split(", ").sort((a,b)=>(a-b)));
     });
 
