@@ -11,12 +11,12 @@
 
 (function() {
 
-  var reponse = prompt("Aimes-tu le gateau ?")
+  const reponse = prompt(`Aimes-tu le gateau ?`)
 
-  if(reponse=="oui"){
-    alert("Super!")
+  if(reponse==`oui` || reponse==`Oui`){
+    alert(`Super!`)
   }else{
-    alert("Du gâteau, ça ne se refuse pas !")
+    alert(`Du gâteau, ça ne se refuse pas !`)
   }
 
 })();
