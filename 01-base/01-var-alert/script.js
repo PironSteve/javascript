@@ -11,7 +11,7 @@
 
 (function() {
 
-    const firstVar = 'Hello, World!';
+    const firstVar = `Hello, World!`;
 
     alert(firstVar);
 
