@@ -10,13 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
-  const reponse = prompt(`Aimes-tu le gateau ?`)
-
-  if(reponse==`oui` || reponse==`Oui`){
-    alert(`Super!`)
-  }else{
-    alert(`Du gâteau, ça ne se refuse pas !`)
-  }
-
+  const reponse = prompt(`Aimes-tu le gateau ?`);
+  reponse==`oui`||reponse==`Oui` ? alert(`Super!`) : alert(`Du gâteau, ça ne se refuse pas !`);
 })();
