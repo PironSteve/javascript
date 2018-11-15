@@ -12,7 +12,7 @@
 (function () {
     // to get the value of an input: document.getElememntById("element-id").value
 
-    var performOperation = function (operation) {
+    var performOperation = (operation => {
 
         switch (operation) {
             case "addition":
@@ -30,10 +30,10 @@
             default:
                 break;
         }
-    };
+    });
 
-    Array.from(document.querySelectorAll("button.operator")).forEach(function ($btn) {
-        $btn.addEventListener("click", function () {
+    Array.from(document.querySelectorAll("button.operator")).forEach($btn => {
+        $btn.addEventListener('click', ()=> {
             performOperation($btn.id);
         });
     });
