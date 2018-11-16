@@ -11,7 +11,7 @@
 
 (function () {
 
-    var fruits = [
+    const fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -26,14 +26,7 @@
         "cerise",
     ];
 
-    document.getElementById("run").addEventListener('click', function () {
-
-        if (fruits.includes("pomme")) {
-            console.log("oui");
-        } else {
-            console.log("non");
-        }
-
+    document.getElementById("run").addEventListener('click', ()=> {
+        fruits.includes("pomme") ? console.log("oui") : console.log("non");
     })
-
 })();
