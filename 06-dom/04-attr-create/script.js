@@ -10,13 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var value = document.getElementById("source").getAttribute("data-image");
-    var image = document.createElement("img");
+    const value = document.getElementById("source").getAttribute("data-image");
+    const image = document.createElement("img");
     image.src = value;
     document.getElementById("target").appendChild(image);
     document.getElementById("source").parentNode.removeChild(source);
-
-    
-
 })();
