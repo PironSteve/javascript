@@ -10,16 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var inputMax10 = document.getElementById("pass-one");
-        inputMax10.maxLength = 10;
-
-    document.querySelector("input").addEventListener("input", function(){
-
-           document.getElementById("counter").innerHTML = document.getElementById("pass-one").value.length + "/10";
-
-
-
+    const inputMax10 = document.getElementById("pass-one");
+    inputMax10.maxLength = 10;
+    
+    document.querySelector("input").addEventListener("input", ()=>{
+        document.getElementById("counter").innerHTML = document.getElementById("pass-one").value.length + "/10";
     })
-
 })();
