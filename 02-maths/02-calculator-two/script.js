@@ -12,7 +12,7 @@
 (function () {
     // to get the value of an input: document.getElememntById("element-id").value
 
-    var performOperation = (operation => {
+    const performOperation = (operation => {
 
         switch (operation) {
             case "addition":
