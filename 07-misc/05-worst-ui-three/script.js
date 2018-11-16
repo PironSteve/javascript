@@ -11,15 +11,15 @@
 
 (function () {
 
-    var buttons = document.getElementsByTagName("button");
-    var target = document.getElementById("target");
-    var dataMax;
-    var dataMin;
-    var timer = [0, 0, 0, 0];
+    const buttons = document.getElementsByTagName("button");
+    const target = document.getElementById("target");
+    let dataMax;
+    let dataMin;
+    const timer = [0, 0, 0, 0];
 
-    Array.from(buttons).forEach(function (btn) {
-        var indexBtn = Array.from(buttons).indexOf(btn);
-        var input = document.getElementById(btn.id.substring(4, btn.id.length));
+    Array.from(buttons).forEach(btn => {
+        const indexBtn = Array.from(buttons).indexOf(btn);
+        const input = document.getElementById(btn.id.substring(4, btn.id.length));
         dataMin = input.getAttribute("data-min");
         dataMax = input.getAttribute("data-max");
 
@@ -31,18 +31,18 @@
             }
         }
         timer[indexBtn] = setInterval(startingInputIncrement, 250);
-        var time = timer[indexBtn];
+        let time = timer[indexBtn];
 
-        btn.addEventListener('click', function () {
+        btn.addEventListener('click', ()=> {
             time = timer[indexBtn];
             if (time > 0) {
                 function stoppingInputIncrement() {
                     clearInterval(time);
                     if (input.value.length === 1) {
-                        input.value = "0" + input.value;
+                        input.value = `0${input.value}`;
                     }
                     if (indexBtn === 0) {
-                        target.innerText = "+" + input.value + target.innerText.substring(4, target.innerText.length);
+                        target.innerText = `+${input.value}${target.innerText.substring(4, target.innerText.length)}`;
                     } else {
                         target.innerText = target.innerText.substring(0, 2 * (indexBtn + 1)) + input.value + target.innerText.substring((indexBtn + 2) * 2, target.innerText.length);
                     }
