@@ -11,17 +11,16 @@
 
 (function() {
 
-    var size = ["10px","15px","20px","25px","30px","25px","20px","15px","10px"];
-    var target = document.getElementById("target")
-    var text = target.innerHTML;
+    const size = ["10px","15px","20px","25px","30px","25px","20px","15px","10px"];
+    const target = document.getElementById("target")
+    const text = target.innerHTML;
     target.innerHTML = "";
-    var tabText = text.split("");
+    const tabText = text.split("");
     
-    for(var i=0; i<tabText.length;i++){
-        var span = document.createElement("span");
+    for(let i=0; i<tabText.length;i++){
+        const span = document.createElement("span");
         span.innerText = tabText[i];
         span.style.fontSize = size[i%size.length];
         target.appendChild(span);
     }
-
 })();

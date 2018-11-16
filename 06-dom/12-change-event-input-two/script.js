@@ -21,12 +21,6 @@
                 counter++;
             }
         }
-
-        if (longueur > 7 && counter > 1) {
-            document.getElementById("validity").innerHTML = "Ok";
-        } else {
-            document.getElementById("validity").innerHTML = "Pas ok";
-        }
+        longueur > 7 && counter > 1 ? document.getElementById("validity").innerHTML = "Ok" : document.getElementById("validity").innerHTML = "Pas ok";
     })
-
 })();
