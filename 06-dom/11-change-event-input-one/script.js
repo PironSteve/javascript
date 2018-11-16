@@ -14,6 +14,6 @@
     inputMax10.maxLength = 10;
     
     document.querySelector("input").addEventListener("input", ()=>{
-        document.getElementById("counter").innerHTML = document.getElementById("pass-one").value.length + "/10";
+        document.getElementById("counter").innerHTML = `${document.getElementById("pass-one").value.length}/10`;
     })
 })();
