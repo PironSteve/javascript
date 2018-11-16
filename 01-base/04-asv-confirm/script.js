@@ -10,5 +10,5 @@
 // You will have time to focus on it later.
 
 (function() {
-    while(!confirm(prompt("Age ?")+"\n"+prompt("Sexe ?\n")+"\n"+prompt("Ville ?")));
+    while(!confirm(`${prompt("Age ?")}\n${prompt("Sexe ?\n")}\n${prompt("Ville ?")}`));
 })();
