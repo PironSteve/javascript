@@ -40,11 +40,8 @@
     ];
 
     document.getElementById("run").addEventListener('click', ()=>{
-
         people.map(people => {
             console.log(`${people.firstname} ${people.lastname}`);
         })
-
     })
-
 })();
