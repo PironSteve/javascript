@@ -10,10 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var target = document.querySelectorAll(".target");
-    for(var i=0;i<target.length;i++){
+    const target = document.querySelectorAll(".target");
+    for(let i=0;i<target.length;i++){
         target[i].innerHTML = "Owned!";
     }
-
 })();
