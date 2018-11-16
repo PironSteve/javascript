@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Dreddy",
             lastname: "Nussgen",
@@ -89,14 +89,8 @@
         },
     ];
 
-    document.getElementById("run").addEventListener('click', function(){
-
-        var person = people.filter(function(people){
-            return people.age>18;
-        })
+    document.getElementById("run").addEventListener('click', ()=>{
+        const person = people.filter(people => people.age>18);
         console.log(person);
-        
-
     })
-
 })();
