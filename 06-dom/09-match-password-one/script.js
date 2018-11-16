@@ -11,9 +11,9 @@
 
 (function () {
 
-    document.getElementById("run").addEventListener('click', function () {
-        var password = document.getElementById("pass-one");
-        var confirm = document.getElementById("pass-two");
+    document.getElementById("run").addEventListener('click', ()=> {
+        const password = document.getElementById("pass-one");
+        const confirm = document.getElementById("pass-two");
 
         if (password.value !== confirm.value) {
             password.style.borderColor = "red";
