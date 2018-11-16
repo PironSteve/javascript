@@ -16,7 +16,7 @@
 
         for (let i = 0; i < 10; i++) {
             rand.push(Math.floor(Math.random() * 100) + 1);
-            document.getElementById("n-" + (i + 1)).innerHTML = rand[i];
+            document.getElementById(`n-${i + 1}`).innerHTML = rand[i];
         }
         document.getElementById("min").innerHTML = Math.min(...rand);
         document.getElementById("max").innerHTML = Math.max(...rand);
