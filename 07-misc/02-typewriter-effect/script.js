@@ -10,10 +10,10 @@
 // You will have time to focus on it later.
 
 (function () {
-    var i = 0;
-        var texte = document.getElementById("target").innerHTML;
+    let i = 0;
+        const texte = document.getElementById("target").innerHTML;
         document.getElementById("target").innerHTML = "";
-        var speed = 150;
+        const speed = 150;
         console.log(texte);
 
         typeWriter();
