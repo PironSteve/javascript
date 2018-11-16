@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Garald",
             lastname: "Freschi",
@@ -39,10 +39,10 @@
         },
     ];
 
-    document.getElementById("run").addEventListener('click', function(){
+    document.getElementById("run").addEventListener('click', ()=>{
 
-        people.map(function(people){
-            console.log(people.firstname+" "+people.lastname);
+        people.map(people => {
+            console.log(`${people.firstname} ${people.lastname}`);
         })
 
     })
