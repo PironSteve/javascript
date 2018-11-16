@@ -17,7 +17,7 @@
 
         let inputValue = document.getElementById("number").value;
 
-        for (var i = inputValue - 1; i >= 1; i--) {
+        for (let i = inputValue - 1; i >= 1; i--) {
             inputValue *= i;
         }
         alert(inputValue);
