@@ -11,20 +11,18 @@
 
 (function () {
 
-    document.getElementById("run").addEventListener('click', function () {
+    document.getElementById("run").addEventListener('click', ()=> {
+        const rand = [];
 
-        var rand = [];
-
-        for (var i = 0; i < 10; i++) {
+        for (let i = 0; i < 10; i++) {
             rand.push(Math.floor(Math.random() * 100) + 1);
             document.getElementById("n-" + (i + 1)).innerHTML = rand[i];
         }
         document.getElementById("min").innerHTML = Math.min(...rand);
         document.getElementById("max").innerHTML = Math.max(...rand);
-        var sum = rand.reduce((a, b) => (a + b));
+        const sum = rand.reduce((a, b) => (a + b));
         document.getElementById("sum").innerHTML = sum;
         document.getElementById("average").innerHTML = sum / rand.length;
-
     })
 
 })();
