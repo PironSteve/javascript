@@ -12,13 +12,14 @@
 (function () {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    var date = new Date();
-    var hour = date.getHours();
+    const date = new Date();
+    const hour = date.getHours();
+    // if (hour >= 18) {
+    //     document.getElementById("target").innerHTML = "Bonsoir";
+    // } else {
+    //     document.getElementById("target").innerHTML = "Bonjour";
+    // }
 
-    if (hour >= 18) {
-        document.getElementById("target").innerHTML = "Bonsoir";
-    } else {
-        document.getElementById("target").innerHTML = "Bonjour";
-    }
+    hour >= 18 ? document.getElementById("target").innerHTML = "Bonsoir" : document.getElementById("target").innerHTML = "Bonjour";
 
 })();
