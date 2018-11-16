@@ -11,7 +11,7 @@
 
 (function() {
 
-    var fruits = [
+    const fruits = [
         "pomme",
         "poire",
         "fraise",
@@ -26,7 +26,7 @@
         "cerise",
     ];
 
-    document.getElementById("run").addEventListener("click", function(){
+    document.getElementById("run").addEventListener("click", ()=>{
         alert(fruits[3]);
     })
 
