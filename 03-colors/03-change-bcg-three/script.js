@@ -10,10 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    document.getElementById("run").addEventListener("click", function(){
-        var randomColor = "rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")";
-        document.documentElement.style.backgroundColor = randomColor
+    document.getElementById("run").addEventListener("click", ()=>{
+        const randomColor = `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
+        document.documentElement.style.backgroundColor = randomColor;
     })
-
 })();
