@@ -11,7 +11,7 @@
 
 (function() {
 
-    var gallery= [
+    const gallery= [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,15 +19,9 @@
         "../../_shared/img/map.svg",
     ];
 
-    var index = 0;
-    document.getElementById("next").addEventListener('click', function(){
-        if(index === gallery.length-1){
-            index = 0;
-        }else{
-            index++;
-        }
+    let index = 0;
+    document.getElementById("next").addEventListener('click', ()=>{
+        index === gallery.length-1 ? index = 0 : index++;
         document.querySelector("img").src = gallery[index];
-
     });
-
 })();
