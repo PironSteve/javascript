@@ -11,23 +11,23 @@
 
 (function() {
 
-    var number = (Math.floor(Math.random()*100)+1);
-    var count = 0;
-    var input;
-    var message = "Le nombre à deviner est entre 1 et 100.";
-    var essais = "";
+    const number = (Math.floor(Math.random()*100)+1);
+    let count = 0;
+    let input;
+    let message = "Le nombre à deviner est entre 1 et 100.";
+    let essais = "";
 
     do {
-        input = prompt(message+ "\n" + essais);
+        input = prompt(`${message}\n${essais}`);
         count++;
         if (input > number) {
             message = "C'est plus petit";
-            essais = "Nombre d'essais :" + count;
+            essais = `Nombre d'essais :${count}`;
         } else {
             message = "C'est plus grand";
-            essais = "Nombre d'essais :" + count;
+            essais = `Nombre d'essais :${count}`;
         }
     } while (input != number);
 
-    alert("Bravo, tu as trouvé le bon nombre en " + count + " coups");
+    alert(`Bravo, tu as trouvé le bon nombre en ${count} coups`);
 })();
