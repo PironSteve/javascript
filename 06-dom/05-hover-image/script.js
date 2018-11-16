@@ -11,14 +11,12 @@
 
 (function() {
 
-    var imgSource = document.querySelector("img").getAttribute("src");
-    var newImage = document.querySelector("img").getAttribute("data-hover")
-    document.querySelector("figure").addEventListener('mouseenter', function(){
+    const imgSource = document.querySelector("img").getAttribute("src");
+    const newImage = document.querySelector("img").getAttribute("data-hover")
+    document.querySelector("figure").addEventListener('mouseenter', ()=>{
         document.querySelector("img").src = newImage;
     })
-
-    document.querySelector("figure").addEventListener('mouseleave', function(){
+    document.querySelector("figure").addEventListener('mouseleave', ()=>{
         document.querySelector("img").src = imgSource;
     })
-
 })();
