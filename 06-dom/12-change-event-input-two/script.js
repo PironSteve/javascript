@@ -11,12 +11,12 @@
 
 (function () {
 
-    document.querySelector("input").addEventListener('input', function () {
-        var longueur = document.getElementById("pass-one").value.length;
-        var tabInput = document.getElementById("pass-one").value.split('');
-        var counter = 0;
+    document.querySelector("input").addEventListener('input', ()=> {
+        const longueur = document.getElementById("pass-one").value.length;
+        const tabInput = document.getElementById("pass-one").value.split('');
+        let counter = 0;
 
-        for (var i = 0; i < tabInput.length; i++) {
+        for (let i = 0; i < tabInput.length; i++) {
             if (!isNaN(tabInput[i])) {
                 counter++;
             }
