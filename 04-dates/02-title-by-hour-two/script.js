@@ -13,15 +13,8 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    var date = new Date();
-    var hour = date.getHours();
-    var minutes = date.getMinutes();
-    console.log(hour);
-    console.log(minutes);
-    if (hour >= 17 && minutes >= 30) {
-        document.getElementById("target").innerHTML = "Bonsoir";
-    } else {
-        document.getElementById("target").innerHTML = "Bonjour";
-    }
-
+    const date = new Date();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    hour >= 17 && minutes >= 30 ? document.getElementById("target").innerHTML = "Bonsoir" : document.getElementById("target").innerHTML = "Bonjour";
 })();
