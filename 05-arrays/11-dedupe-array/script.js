@@ -11,7 +11,7 @@
 
 (function () {
 
-    var fruits = [
+    const fruits = [
         "cerise",
         "durian",
         "pomme",
@@ -28,11 +28,8 @@
         "cerise",
     ];
 
-    document.getElementById("run").addEventListener('click', function () {
-
-        var uniqueFruits = [...new Set(fruits)];
+    document.getElementById("run").addEventListener('click', ()=> {
+        const uniqueFruits = [...new Set(fruits)];
         console.log(uniqueFruits);
-
     })
-
 })();
