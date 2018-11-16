@@ -27,7 +27,7 @@
     ];
 
     document.getElementById("run").addEventListener('click', ()=>{
-        fruits.map(function(fruits){
+        fruits.map(fruits => {
                 console.log(fruits);
         })
     })
