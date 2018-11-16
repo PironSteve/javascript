@@ -11,14 +11,14 @@
 
 (function () {
 
-    var tabButtons = document.querySelectorAll("button");
-    var buttonsValue = [];
-    var dataMin;
-    var datMax;
-    tabButtons.forEach(function (button) {
-        var indexButton = Array.from(tabButtons).indexOf(button);
+    const tabButtons = document.querySelectorAll("button");
+    const buttonsValue = [];
+    let dataMin;
+    let datMax;
+    tabButtons.forEach(button => {
+        const indexButton = Array.from(tabButtons).indexOf(button);
         buttonsValue.push(button.innerText);
-        button.addEventListener('click', function () {
+        button.addEventListener('click', ()=> {
             dataMin = button.getAttribute("data-min");
             dataMax = button.getAttribute("data-max");
 
@@ -28,13 +28,12 @@
                 button.innerText++;
             }
 
-            
             buttonsValue[indexButton] = button.innerText;
             if (buttonsValue[indexButton].length < 2) {
-                buttonsValue[indexButton] = "0"+buttonsValue[indexButton]
+                buttonsValue[indexButton] = `0${buttonsValue[indexButton]}`;
             }
             
-            document.getElementById("target").innerHTML = "+" + buttonsValue[0] + buttonsValue[1] +  buttonsValue[2] +  buttonsValue[3];
+            document.getElementById("target").innerHTML = `+${buttonsValue[0]}${buttonsValue[1]}${buttonsValue[2]}${buttonsValue[3]}`;
 
             console.log(button.innerText);
             console.log(dataMax);
