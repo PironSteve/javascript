@@ -13,15 +13,14 @@
 
     // to get the value of an input: document.getElememntById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function () {
+    document.getElementById("run").addEventListener("click", ()=> {
 
-        var inputValue = document.getElementById("number").value;
+        let inputValue = document.getElementById("number").value;
 
         for (var i = inputValue - 1; i >= 1; i--) {
             inputValue *= i;
         }
         alert(inputValue);
-
     });
 
 })();
