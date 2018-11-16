@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    const people = [
         {
             firstname: "Bradford",
             lastname: "Coldbath",
@@ -89,14 +89,9 @@
         },
     ];
 
-    document.getElementById("run").addEventListener('click', function(){
-
-        var jeanDupont = people.find(function(people){
-            return people.firstname==="Jean" && people.lastname==="Dupont";
-        })
+    document.getElementById("run").addEventListener('click', ()=>{
+        const jeanDupont = people.find(people=> people.firstname==="Jean" && people.lastname==="Dupont");
         console.log(jeanDupont.email);
         console.log(people.indexOf(jeanDupont));
-
     })
-
 })();
