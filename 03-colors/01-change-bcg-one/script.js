@@ -11,12 +11,9 @@
 
 (function() {
 
-    var allButtons = document.querySelectorAll("button");
-
-        allButtons.forEach(function(button){
-            button.addEventListener("click", function(){
+    const allButtons = document.querySelectorAll("button");
+        allButtons.forEach(button => { button.addEventListener("click", ()=> {
                 document.documentElement.style.backgroundColor = button.id;
             })
         })
-
 })();
