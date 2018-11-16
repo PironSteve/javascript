@@ -11,12 +11,12 @@
 
 (function () {
 
-    document.getElementById("run").addEventListener('click', function () {
+    document.getElementById("run").addEventListener('click', ()=> {
 
-        var password = document.getElementsByTagName("input")[0];
-        var confirm = document.getElementsByTagName("input")[1];
-        var att = document.createAttribute("class");
-        var att2 = document.createAttribute("class");
+        const password = document.getElementsByTagName("input")[0];
+        const confirm = document.getElementsByTagName("input")[1];
+        const att = document.createAttribute("class");
+        const att2 = document.createAttribute("class");
         att.value = "error";
         att2.value = "error";
 
@@ -24,7 +24,6 @@
             password.setAttributeNode(att);
             confirm.setAttributeNode(att2);
         }
-
     })
 
 
