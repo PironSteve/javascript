@@ -15,7 +15,7 @@
         let nombre = "";
         for (let i = 1; i < 21; i++) {
             if (i % 2 == 0) {
-                nombre += `Le carré de ${i} est : ${Math.pow(i, 2)}\n`;
+                nombre += `Le carré de ${i} est : ${i ** 2}\n`;
             }
         }
         alert(nombre);
