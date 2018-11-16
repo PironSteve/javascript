@@ -11,15 +11,13 @@
 
 (function () {
 
-    document.getElementById("run").addEventListener("click", function () {
+    document.getElementById("run").addEventListener("click", ()=> {
+        const year = document.getElementById("year").value;
+        let date;
+        const arrayMonth = ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"];
+        const monthWithFriday13 = new Array();
 
-
-        var year = document.getElementById("year").value;
-        var date;
-        var arrayMonth = ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"];
-        var monthWithFriday13 = new Array();
-
-        for (var month = 0; month < 12; month++) {
+        for (let month = 0; month < 12; month++) {
             date = new Date(year, month, 13)
             if (date.getDay() == 5) {
                 monthWithFriday13.push(arrayMonth[month]);
@@ -27,5 +25,4 @@
         }
         alert(monthWithFriday13);
     })
-
 })();
