@@ -11,15 +11,15 @@
 
 (function () {
 
-    var tab = document.createElement("table");
-    var tabBody = document.createElement("tbody");
+    const tab = document.createElement("table");
+    const tabBody = document.createElement("tbody");
 
-    for (var i = 0; i < 10; i++) {
-        var row = document.createElement("tr");
-
-        for (var j = 0; j < 1; j++) {
-            var cell = document.createElement("td");
-            var cellText = document.createTextNode(i + 1);
+    for (let i = 0; i < 10; i++) {
+        const row = document.createElement("tr");
+        
+        for (let j = 0; j < 1; j++) {
+            const cell = document.createElement("td");
+            const cellText = document.createTextNode(i + 1);
             cell.appendChild(cellText);
             row.appendChild(cell);
         }
